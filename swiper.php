@@ -24,7 +24,7 @@ function swiper($elements, $page, $onlist, $parameters)
             $allpages = ceil($elements/$onlist);
             $prev = ($page>0) ? '<span class="pager"><a href="?page='.($page-1).( ! empty($parameters) ? '&'.$parameters : '').'">Назад</a></span>' : ''; // если хотя бы на 2 странице, пишем НАЗАД
             $next = (($page+1)<$allpages) ? '<span class="pager"><a href="?page='.($page+1).( ! empty($parameters) ? '&'.$parameters : '').'">Вперед</a></span>' : '';    
-            $begin = $end = null;
+            $begin = $end = $print = null;
             $b = 0;
             $e = $allpages;
             $ellipsis = '<span class="pager">...</span>';
