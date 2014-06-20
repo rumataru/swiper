@@ -13,7 +13,7 @@
 * $onlist     - количество элементов на странице
 * $parameters - параметры которые необходимо передать при переходе на следующую страницу (необходимо для поиска, что бы GET параметры не терялись)
 */
-
+<?
 function swiper($elements, $page, $onlist, $parameters)
     {
         // swiper mod 2.0
@@ -63,3 +63,4 @@ function swiper($elements, $page, $onlist, $parameters)
             }
         return '<div class="paginator"><span>Страница '.($page+1).' из '.$allpages.':</span>'.$prev.$begin.$print.$end.$next.'</div>';
     }
+?>
